@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Typing Game</title>
 </head>
 <body>
-    <div class="timer" id="timer">0</div>
+    <div class="timer" id="timer"></div>
     <div class="container">
-        <div class="quote-display" id="quote-display">Type this text</div>
-        <textarea class="quote-input" id="quote-input" autofocus >Input here</textarea>
+        <div class="quote-display" id="quoteDisplay"></div>
+        <textarea class="quote-input" id="quoteInput" autofocus ></textarea>
     </div>
+    
+    <div class="scoreboard" id="scoreboard">Score:</div>
+    <div class="score" id="score">0</div>
+    
 </body>
 </html>
