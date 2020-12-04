@@ -54,7 +54,7 @@ body, .quote-input {
 }
 
 .correct {
-    color: green;
+    color: rgb(0, 255, 0);
 }
 
 .incorrect {
@@ -68,13 +68,9 @@ body, .quote-input {
     font-size: 3rem;
     color: yellow;
     font-weight: bold;
+    display: flex;
 }
 
 .score {
-    position: absolute;
-    bottom: 2rem;
-    right: 1em;
-    font-size: 3rem;
-    color: yellow;
-    font-weight: bold;
+    margin-left: 1rem;
 }

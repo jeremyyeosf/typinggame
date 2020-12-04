@@ -3,6 +3,8 @@ const RANDOM_QUOTE_API_URL = 'http://api.quotable.io/random'
 const quoteDisplayElement = document.getElementById('quoteDisplay')
 const quoteInputElement = document.getElementById('quoteInput')
 const timerElement = document.getElementById('timer')
+const scoreElement = document.getElementById('score')
+scoreElement.innerHTML = 2
 
 quoteInputElement.addEventListener('input', () => {
     const arrayQuote = quoteDisplayElement.querySelectorAll('span')
@@ -26,7 +28,11 @@ quoteInputElement.addEventListener('input', () => {
         }
     })
 
-    if (correct) renderNewQuote()
+    if (correct) {
+        scoreElement.innerHTML = parseInt(scoreElement.innerHTML) + 1
+        renderNewQuote()
+
+    }
 })
 
 
