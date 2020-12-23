@@ -4,7 +4,7 @@ const quoteDisplayElement = document.getElementById('quoteDisplay')
 const quoteInputElement = document.getElementById('quoteInput')
 const timerElement = document.getElementById('timer')
 const scoreElement = document.getElementById('score')
-scoreElement.innerHTML = 2
+scoreElement.innerHTML = 0
 
 quoteInputElement.addEventListener('input', () => {
     const arrayQuote = quoteDisplayElement.querySelectorAll('span')
